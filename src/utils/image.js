@@ -15,7 +15,7 @@ import { Tensor } from './tensor.js';
 // Will be empty (or not used) if running in browser or web-worker
 import sharp from 'sharp';
 
-const BROWSER_ENV = typeof self !== 'undefined';
+const BROWSER_ENV = false;
 const WEBWORKER_ENV = BROWSER_ENV && self.constructor.name === 'DedicatedWorkerGlobalScope';
 
 let createCanvasFunction;

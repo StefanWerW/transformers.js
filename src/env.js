@@ -29,7 +29,7 @@ import url from 'url';
 const VERSION = '3.0.1';
 
 // Check if various APIs are available (depends on environment)
-const IS_BROWSER_ENV = typeof self !== 'undefined';
+const IS_BROWSER_ENV = false;
 const IS_WEBWORKER_ENV = IS_BROWSER_ENV && self.constructor.name === 'DedicatedWorkerGlobalScope';
 const IS_WEB_CACHE_AVAILABLE = IS_BROWSER_ENV && 'caches' in self;
 const IS_WEBGPU_AVAILABLE = typeof navigator !== 'undefined' && 'gpu' in navigator;
